@@ -1,0 +1,3 @@
+C:\Users\Grzegorz\Desktop\projekty\zaawansowane3\test\test\x64\Debug\test.vcxproj.Up2Date
+C:\Users\Grzegorz\Desktop\zaawansowane3-main\zaawansowane3-main\test\test\x64\Debug\test.vcxproj.Up2Date
+C:\Users\Grzegorz\Desktop\zaawansowane3-main\zaawansowane3\test\test\x64\Debug\test.vcxproj.Up2Date
