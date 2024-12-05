@@ -15,8 +15,8 @@ using namespace std;
 /// @brief Klasa scalanie oraz deklaracje jej metod
 class scalanie {
 private:
-	string* tab;///< wskaŸnik do Zmiennej zawieraj¹cej nieposortowanieowan¹ tablicê typu string
-	int* tabs;///< wskaŸnik do tablicy zawieraj¹cej posortowanieowan¹ tablicê tab
+	string* tab;///< wskaŸnik do Zmiennej zawieraj¹cej nieposortowan¹ tablicê typu string
+	int* tabs;///< wskaŸnik do tablicy zawieraj¹cej posortowan¹ tablicê tab
 public:
 
 	scalanie(string a);

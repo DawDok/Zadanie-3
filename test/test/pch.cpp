@@ -9,10 +9,10 @@
 #include <algorithm>
 
 using namespace std;
-/// @brief konstruktor, automatycznie sortowanieuje tablicê
-/// @param a - tablica do posortowanieowania 
+/// @brief konstruktor, automatycznie sortuje tablicê
+/// @param a - tablica do posortowania 
 scalanie::scalanie(string a) {
-    if (a != "") {//je¿eli string == "" to przechodzi do else w którym ustawia tablicê na 0
+    if (a != "") {
         int i = 0;
         int tabtab = 0;
         int spaces = dlugosc(a);
@@ -42,7 +42,7 @@ scalanie::scalanie(string a) {
     }
     
 }
-/// @brief Destruktor, usuwa zmienne dynamiczne tab i tabs
+/// @brief Destruktor, usuwa zmienne dynamiczne tab i tabs (tab i tabs s¹ ma stercie)
 scalanie::~scalanie() {
     delete[] tab;
     delete[] tabs;
@@ -50,7 +50,7 @@ scalanie::~scalanie() {
 
 /// @brief metoda sprawdzanie, zwraca d³ugoœæ danego elementu tablicy (np. 3 element to 25 czyli ma d³ugoœæ 2) 
 /// @param i - miejece elementu w string a 
-/// @param a - nieposortowanieowana tablica tab
+/// @param a - nieposortowana tablica tab
 int scalanie::sprawdzanie(int i, string a) {
     int length = 0;
     while (i + length < a.length() && a[i + length] != ' ') {
@@ -60,7 +60,7 @@ int scalanie::sprawdzanie(int i, string a) {
 }
 
 /// @brief metoda dlugosc zwraca iloœæ spacji w stringu powiêkszonej o 1
-/// @param a - nieposortowanieowana tablica tab
+/// @param a - nieposowana tablica tab
 int scalanie::dlugosc(string a) {
     int spaces = 0;
     for (int j = 0; j < a.length(); j++) {
@@ -79,7 +79,7 @@ void scalanie::convert(int spaces) {
         i++;
     }
 }
-/// @brief metoda sortowanie, sortowanieuje tablicê tabs
+/// @brief metoda sortowanie, sortuje tablicê tabs
 /// @param spaces - iloœæ elementów tablicy tabs
 void scalanie::sortowanie(int spaces) {
     int mnoznik = 1;
@@ -128,7 +128,7 @@ void scalanie::sortowanie(int spaces) {
 
 
 /// @brief metoda zwrottabs,zwraca tablicê w stringu
-/// @param a - nieposortowanieowana tablica tab
+/// @param a - nieposortowana tablica tab
 string scalanie::zwrottabs(string a) {
     if (tab[0] == "") {
         return "";
